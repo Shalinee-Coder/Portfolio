@@ -1,0 +1,78 @@
+.education-page {
+  background: linear-gradient(to bottom, #f7f7f7, #eaeaea);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Hero section with background image */
+.hero1-section {
+  background-image: url('/src/Images/portfolio3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 50px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+.hero-heading {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hero-subheading {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Education cards */
+.education-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  background:rgb(145, 72, 72);
+  gap: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.education-card {
+  background: rgba(0, 0, 0, 0.5); /* Transparent dark card */
+  color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+}
+
+.education-card h3 {
+  color: #facc15;
+  margin: 0;
+  font-size: 16px;
+}
+
+.education-card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.education-card p {
+  font-size: 14px;
+  color: #ddd;
+  margin: 8px 0;
+}

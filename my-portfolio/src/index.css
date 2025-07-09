@@ -1,0 +1,101 @@
+/* index.css */
+
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full height layout */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* App container to offset fixed navbar */
+.app-container {
+  margin-top: 70px; /* Adjust based on your navbar height */
+  padding: 20px;
+}
+
+/* Navbar styling */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  z-index: 999;
+}
+
+/* Navbar links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Responsive typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Resume button */
+.resume-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+}
+
+.resume-button:hover {
+  background-color: #0056b3;
+}
+
+/* Sections spacing */
+.section {
+  padding: 60px 20px;
+}
+
+/* Center text */
+.center {
+  text-align: center;
+}
+
+/* Responsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}

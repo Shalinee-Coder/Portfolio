@@ -1,0 +1,116 @@
+.about-transparent-container {
+  background-image: url('/src/Images/portfolio4.jpg'); /* or any background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.glass-box {
+  background: rgba(0, 0, 0, 0.4); /* Black transparent */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 5%;
+  width: 600px;
+  color: #f2f2f2;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 2.0rem;
+  font-weight: bold;
+  color: #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-intro {
+  font-size: 1.0rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.about-card {
+  margin-bottom: 30px;
+  border-left: 4px solid #4fa8f9;
+  padding-left: 20px;
+}
+
+.about-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #f0ad4e;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-card p,
+.about-card ul {
+  font-size: 1.03rem;
+  color: #ddd;
+  line-height: 1.7;
+}
+
+.about-card ul {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.about-card ul li {
+  margin-bottom: 8px;
+}
+
+.about-footer {
+  text-align: center;
+  font-size: 1.0rem;
+  margin-top: 40px;
+}
+
+.about-footer a {
+  color: #4fa8f9;
+  text-decoration: underline;
+}
+
+.about-footer a:hover {
+  color: #1f8fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .glass-box {
+    padding: 30px 20px;
+  }
+
+  .about-title {
+    font-size: 2.2rem;
+  }
+
+  .about-card h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,110 @@
+.skills-main {
+  position: relative;
+  display: flex;
+  color: #fff;
+  padding: 40px;
+  gap: 40px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.skills-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/src/Images/portfolio8.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -2; /* Background image layer */
+}
+
+.skills-main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* 🔶 Black overlay with opacity */
+  z-index: -1; /* Above the image but below content */
+}
+
+
+
+.skills-profile {
+  width: 25%;
+  background: rgba(0, 0, 0, 0.7); /* Black transparent */
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+.skills-profile h2 {
+  margin: 10px 0 5px;
+}
+
+.skills-profile p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.skills-profile .location,
+.skills-profile .email {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #bbb;
+}
+
+.skills-section-container {
+  width: 65%;
+  margin-top: 7%;
+}
+
+.skills-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.skills-card {
+  background: rgba(0, 0, 0, 0.7); /* Black transparent */
+  border-radius: 16px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s;
+}
+
+.skills-card:hover {
+  transform: scale(1.02);
+}
+
+.skills-card h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+  font-size: 15px;
+}

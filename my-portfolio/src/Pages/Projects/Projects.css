@@ -1,0 +1,79 @@
+.projects-section {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-heading {
+  font-size: 24px;
+  margin-bottom: 40px;
+  margin-top: 7%;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1c1c1c;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.project-subtitle {
+  font-size: 14px;
+  color: #aaa;
+    text-align: center;
+  margin-bottom: 4px;
+}
+
+.project-title {
+  font-size: 19px;
+  margin: 0 0 10px;
+    text-align: center;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 12px;
+    text-align: center;
+}
+
+.project-link {
+  display: inline-block; /* OR use flex with justify-content if needed */
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  transition: color 0.2s;
+  text-align: center;
+  margin-left:  40%; /* center horizontally */
+}
+
+.project-link:hover {
+  color: darkorange;
+    text-align: center;
+}
