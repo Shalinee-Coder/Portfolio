@@ -28,11 +28,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-images">
+        {/* <div className="contact-images">
           <img src="/src/Images/portfolio4.jpg" alt="Gallery 1" />
           <img src="/src/Images/portfolio2.jpg" alt="Gallery 2" />
           <img src="/src/Images/portfolio5.jpg" alt="Gallery 3" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

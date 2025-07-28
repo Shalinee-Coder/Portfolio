@@ -2,7 +2,7 @@
   position: relative;
   padding: 50px;
   text-align: center;
-  height: 200vh;
+  height: 100vh;
   background-image: url(/src/Images/portfolio.jpg); /* ✅ Use forward slashes for URL path */
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,15 +18,19 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* ✅ Adjust opacity here */
+  background-color: rgba(0, 0, 0, 0.8); /* ✅ Adjust opacity here */
   z-index: 2;
 }
 
+.h1 {
+  margin-top:10%;
+}
 .content {
   position: relative;
   z-index: 2; /* ✅ Ensure content appears above the overlay */
-  margin-top: 11%;
+  margin-top: 7%;
   color: aliceblue;
+
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -37,6 +41,7 @@
 .home span {
   color:orange;
   font-weight: bold;
+  margin-top: 5%;
 }
 
 .description {
@@ -52,4 +57,97 @@
   border-radius: 5px;
   font-weight: 500px !important;
   text-decoration: none;
+}
+
+/* Top-right name */
+.top-right-name {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  z-index: 1000;
+
+}
+
+/* Profile Image Style */
+.profile-image {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  /* border: 5px solid white; */
+  border-radius: 0; /* square shape */
+  display: block;
+  background-size: cover;
+  padding: 40px 30px;
+  border-radius: 10%;
+  margin: 0 auto 20px; /* center and space below */
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  margin-top: 7%;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeUp 1s ease-in-out forwards;
+}
+
+.tagline {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.3s forwards;
+}
+
+.description {
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.5s forwards;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: rgb(211, 133, 31);
+  color: white;
+  margin-top: 500px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500 !important;
+  text-decoration: none;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 0.7s forwards;
+}
+
+.profile-image {
+  width: 280px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10%;
+  display: block;
+  background-size: cover;
+  padding: 40px 30px;
+  margin: 0 auto 20px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out 0.4s forwards;
 }

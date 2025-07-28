@@ -9,9 +9,9 @@
 }
 
 .contact-card {
-  background-color: rgba(0, 0, 0, 0.6); /* black transparent background */
+  background-color: rgba(0, 0, 0, 0.5); /* black transparent background */
   color: #fff;
-  padding: 40px;
+  padding: 80px;
   border-radius: 16px;
   width: 800px;
   margin-top: 7%;
@@ -20,9 +20,10 @@
 }
 
 .contact-title {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 20px;
   text-align: center;
+  color: #FFA500;
 }
 
 .contact-main {

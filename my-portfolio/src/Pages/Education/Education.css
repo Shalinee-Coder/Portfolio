@@ -6,10 +6,11 @@
 
 /* Hero section with background image */
 .hero1-section {
-  background-image: url('/src/Images/portfolio3.jpg');
+  /* background-image: url('/src/Images/portfolio3.jpg'); */
   background-size: cover;
+  background-color: black;
   background-position: center;
-  height: 400px;
+  height: 250px;
   position: relative;
   display: flex;
   align-items: center;

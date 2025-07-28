@@ -1,15 +1,30 @@
 .projects-section {
-  background-color: #0f0f0f;
+  background-color: #3d3131;
   color: #fff;
+  /* background-image: url('/src/Images/portfolio7.jpg'); */
+     /* background-color: #612020; */
   padding: 60px 20px;
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
 
 .projects-heading {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 40px;
-  margin-top: 7%;
+  margin-top: 4%;
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: white;
+}
+
+.projects-heading:hover {
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 4%;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-bottom: 80px;
+  color: orange;
 }
 
 .projects-grid {
@@ -21,7 +36,7 @@
 
 .project-card {
   background-color: #1c1c1c;
-  width: 500px;
+  width: 480px;
   height: 400px;
   text-align: center;
   padding: 20px;
@@ -76,4 +91,12 @@
 .project-link:hover {
   color: darkorange;
     text-align: center;
+}
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
 }
